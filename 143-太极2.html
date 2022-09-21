@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: lightblue;
+        }
+        div{
+            width: 200px;
+            height: 200px;
+            background: linear-gradient(white 50%,black 50%);
+            margin: 150px auto;
+            display: flex;
+            align-items: center;
+            border-radius: 50%;
+            transition: all 2s;
+
+            /* transform: rotate(-40deg); */
+
+            /* rotate-正值是顺时针旋转，负值是逆时针旋转 */
+
+            transform: rotate(0deg);
+
+            /* transform-origin: left top; */ 
+        
+        }
+        div:hover{
+            transform: rotate(720deg);
+        }
+        div::before{
+            content: "";
+            display: block;
+            width: 100px;
+            height: 100px;
+            background: red;
+            border-radius: 50%;
+            background: radial-gradient(white 25%,black 25%);
+        }
+        div::after{
+            content: "";
+            display: block;
+            width: 100px;
+            height: 100px;
+            background: radial-gradient(black 25%,white 25%);
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

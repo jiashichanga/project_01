@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 300px;
+            /* height: 300px; */
+            border: 5px solid red;
+            margin: 200px auto;
+            /* overflow: hidden; */
+        }
+        img{
+            width: 100%;
+            transition: all 2s;
+
+            transform-origin: right top;
+
+            /* 改变中心点位置
+            centar
+            left center 
+            right center*/
+        }
+        div:hover img{
+            /* width: 150%; */
+            /* transform: scale(2); */
+            /* 负值-倒像放大效果 */
+            /* 支持x轴，y轴单独放大效果
+                scaleX
+                scaleY */
+                transform: scale(2);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="/img/刘亦菲.jpeg" alt="">
+    </div>
+</body>
+</html>

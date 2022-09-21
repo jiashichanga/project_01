@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background: red;
+            /* animation: lidou1 2s linear 2s infinite; */
+            /* infinite：无限次执行 */
+            animation-name: lidou2;
+            animation-duration: 12s;
+            animation-timing-function: linear;
+            /* animation-delay: 3s; */
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+
+            /* normal  正常
+
+            reverse  反方向运动
+            
+            alternate 正常方向-交替
+            
+            alternate-reverse  反方向交替*/
+            }
+        div:hover{
+            animation-play-state: paused;
+        }
+        /* 声明动画 */
+
+        @keyframes lidou1 {
+            from{
+                width: 200px;
+                height: 200px;
+                background: yellow;
+            }
+            to{
+                width: 400px;
+                height: 600px;
+                background: blue;     
+                }
+            
+        }
+        @keyframes lidou2 {
+            0%{
+                width: 200px;
+                height: 200px;
+                background: yellow;
+            }
+            30%{
+                width: 500px;
+                height: 200px;
+                background: green;
+            }
+            60%{
+                width: 100px;
+                height: 500px;
+                background: black;
+            }
+            
+            80%{
+                width: 1000px;
+                height: 50px;
+                background: indigo;
+            }
+            100%{
+                width: 400px;
+                height: 600px;
+                background: blue;     
+                }
+            
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

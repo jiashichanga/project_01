@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .swiper-container{
+            width: 600px;
+            height: 600px;
+            margin: 50px auto;
+            overflow: hidden;
+        }
+        .swiper-container img{
+            width: 600px;
+            height: 600px;
+        }
+        .swiper-slide{
+            float: left;
+        }
+        .swiper-wrapper{
+            width: 9999px;
+            animation: swiperrun 12s linear infinite;
+        }
+        .swiper-wrapper:hover{
+            animation-play-state: paused;
+        }
+        @keyframes swiperrun {
+            0%{
+                transform: translateX(0);
+            }
+            5%{
+                transform: translateX(-600px);
+            }
+            25%{
+                transform: translateX(-600px);
+            }
+            30%{
+                transform: translateX(-1200px);
+            }
+            50%{
+                transform: translateX(-1200px);
+            }
+            55%{
+                transform: translateX(-1800px);
+            }
+            75%{
+                transform: translateX(-1800px);
+            }
+            80%{
+                transform: translateX(-2400px);
+            }
+            100%{
+                transform: translateX(-2400px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="/img/刘亦菲.jpeg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="/img/刘亦菲.jpeg" alt="">
+
+            </div>
+            <div class="swiper-slide">
+                <img src="/img/刘亦菲.jpeg" alt="">
+
+            </div>
+            <div class="swiper-slide">
+                <img src="/img/刘亦菲.jpeg" alt="">
+
+
+            <!-- 为了实现无线轮播，最后一份和第一份是一样的 -->
+
+            </div>
+            <div class="swiper-slide">
+                <img src="/img/刘亦菲.jpeg" alt="">
+
+
+            <!-- 为了实现无线轮播，最后一份和第一份是一样的 -->
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

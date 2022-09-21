@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 940px;
+            height: 100px;
+            margin: 0 auto;
+            background: yellow;
+        }
+        .box div{
+            float: left;
+            width: 300px;
+            height: 100px;
+            background: red;
+            margin-right: 20px;
+        }
+        .box div:last-child {
+            margin-right: 0;
+        }
+
+        /* li:first-child{
+            background: yellow;
+        }
+        li:last-child{
+            background: red;
+        }
+        li:nth-child(4){
+            background: blue;
+        } */
+        li:nth-child(1),li:nth-child(5){
+            background: red;
+            /* 偶数是2n（even），奇数是2n+1，2n-1（odd） */
+        }
+    </style>
+</head>
+<body>
+    <!-- 通过某种关系查找页面元素
+    比如：
+    匹配某元素第一个子元素
+    匹配某元素最后一个子元素 -->
+    <div class="box">
+        <div></div>
+        <div></div>
+        <div class="last"></div>
+    </div>
+
+
+    <ul>
+        <li>111</li>
+        <li>222</li>
+        <li>333</li>
+        <li>444</li>
+        <li>555</li>
+        <li>666</li>
+    </ul>
+</body>
+</html>

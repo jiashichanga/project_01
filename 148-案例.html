@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        img{
+            display: block;
+        }
+        .box{
+            width: 350px;
+            border: 5px solid red;
+            margin: 100px auto;
+            position: relative;
+            overflow: hidden;
+        }
+        .box img{
+            width: 100%;
+            transition: all 2s;
+        }
+        .box img:hover{
+            transform: translate(50px);
+            opacity: 0.5;
+        }
+        .box h2{
+            position: absolute;
+            left: 50px;
+            top: 10px;
+            color: white;
+            transition: all 2s 1s;
+        }
+        .box:hover h2{
+            transform: translate(50px);
+            /* left: 100px; */
+        }
+        .box p{
+            position: absolute;
+            left: 50px;
+            width: 100px;
+            color: white;
+            background: darkcyan;
+        }
+        .box .p1{
+            top: 100px;
+            transform: translateY(400px);
+            transition: all 0.5s;
+        }
+        .box:hover .p1{
+            /* top: 100px; */
+            transform: translateY(0px);
+        }
+        .box .p2{
+            top: 200px;
+            transform: translateX(400px);
+            transition: all 1s;
+        }
+        .box:hover .p2{
+            /* top: 200px; */
+            transform: translateX(0px);
+        }
+        .box .p3{
+            top: 300px;
+            transform: translateX(-400px);
+            transition: all 1.5s;
+        }
+        .box:hover .p3{
+            /* top: 300px; */
+            transform: translateX(0px);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="/img/刘亦菲.jpeg" alt="">
+        <h2>title</h2>
+        <p class="p1">111</p>
+        <p class="p2">222</p>
+        <p class="p3">333</p>
+    </div>
+</body>
+</html>
